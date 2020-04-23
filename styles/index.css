@@ -1,0 +1,55 @@
+ 
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  
+
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.container::after, .container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+section#tooltip p {
+  margin: 20px 0;
+ }
+
+section#tooltip > div > div > p:nth-child(odd)::first-letter {
+  font-weight: normal;
+  float: left;
+  font-size: 4em;
+  line-height: .75;
+  letter-spacing: .15em;
+  margin-top: .2em;
+  font-family: "Roboto Mono", monospace;
+
+}
+
+.wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+ 
